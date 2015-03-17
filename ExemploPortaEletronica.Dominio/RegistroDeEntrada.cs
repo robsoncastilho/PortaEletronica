@@ -2,6 +2,13 @@ using System;
 
 namespace ExemploPortaEletronica.Dominio
 {
+    /// <summary>
+    /// RegistroDeEntrada implementada como um value object:
+    /// http://robsoncastilho.com.br/2013/11/10/trabalhando-com-value-objects/
+    /// 
+    /// Horário de expediente da agencia bancária considerada no exemplo: das 10 às 16 hrs
+    /// (Por simplicidade esse intervalo está hard-coded no metodo FoiEmHorarioDeExpediente. Em um projeto real, provavelmente isso seria evitado)
+    /// </summary>
     public class RegistroDeEntrada
     {
         public DateTime DataHoraDeEntrada { get; private set; }
